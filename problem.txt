@@ -1,0 +1,2 @@
+Please list out all the nearby reasturant's based on user current location. Users must be able to sign up, view the restaurants nearby and
+user can add their comments to the resturants

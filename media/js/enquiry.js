@@ -1,0 +1,29 @@
+$(function(){
+ $('.form-enquiry').on('submit',function(e){
+  e.preventDefault();
+  console.log($('#id_name_of_student').val());
+  $.ajax({
+    url:'/website/enquiry_form/',
+    type:"POST",
+    data:
+    {
+      name_of_student:$('#id_name_of_student').val(),
+      student_mobile_no:$('#id_student_mobile_no').val(),
+      about:$('#id_about').val(),
+      email_of_student:$('#id_email_of_student').val(),
+      query:$('#id_query').val(),
+      csrfmiddlewaretoken:$('input[name="csrfmiddlewaretoken"]').val(), 
+    },
+    success:function(response){
+      if(response['success']==true)
+      {
+        window.location.replace('/website/enquiry_form/success')
+      }
+      
+   },
+   error:function(xhr,status){
+    console.log('ajax error ='+xhr.statusText);
+   },   
+  });
+ });
+});
