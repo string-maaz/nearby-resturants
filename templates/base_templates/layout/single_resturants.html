@@ -90,30 +90,27 @@
     <br>
     <div class="box box-solid">
         <div class="box-body">
-            <form action="" class="form-horizontal">
-                <div class="form-group">
-                    <label for="location" class="col-md-1 control-label text-primary" style="font-size: 120%;">Location</label>
-                    <div class="col-md-3">
-                        <select name='location' id="location" class="form-control">
-                            <option value="0" disabled selected>Select</option>
-                            {% for location in locations %}
-                                <option value="{{ location.id }}">{{ location.id }} - {{ location.name }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                </div>
-            </form>
+            
         </div>
     </div>
 <br><br>
         <div class="box box-success">
             <div class="box-header with-border">
-                <h4 class="box-title text-muted"><b>location Resturant List</b></h4>
+                <h4 class="box-title text-muted"><b>Comment Form</b></h4>
             </div>
             <div class="box-body">
-                <div id="points_list">
+                <div id="comment_input_form">
                     
-                    <div class="alert alert-success" role="alert">Select a location to show Resturant list</div>
+                </div>  
+            </div>
+        </div>
+        <div class="box box-success">
+            <div class="box-header with-border">
+                <h4 class="box-title text-muted"><b>Comment Form</b></h4>
+            </div>
+            <div class="box-body">
+                <div id="old_comments">
+                    
                 </div>  
             </div>
         </div>
