@@ -15,9 +15,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROJECT_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-print PROJECT_PATH
 ENV = PROJECT_PATH.split(os.sep)[-1]
-print ENV
 
 
 # Quick-start development settings - unsuitable for production
